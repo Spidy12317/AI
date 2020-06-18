@@ -1,0 +1,7 @@
+l=list(input("Enter the Elements For List seperated by Space: ").split())
+s=set(input("Enter the Elements For Set seperated by Space: ").split())
+t=tuple(input("Enter the Elements For Tuple seperated by Space: ").split())
+d=dict((input("Enter The Key: "),input("Enter the Value: ")) for i in range(int(input("Number Of Elements for Dictionary: "))))
+print(*t)
+del d[input("Enter The Key: ")]
+print(d)
