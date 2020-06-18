@@ -1,7 +1,4 @@
-n=int(input("Enter the no of Terms: "))
-a=0;b=1;
-for i in range(n-2):
-    print(a,end=" ")
-    print(b,end=" ")
-    a=a+b
-    b=b+a
+l=[0,1]
+for i in range(int(input("Enter the no of Terms: "))-2):
+    l.append(l[i]+l[i+1])
+print(*l)
