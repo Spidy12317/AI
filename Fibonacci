@@ -1,0 +1,7 @@
+n=int(input("Enter the no of Terms: "))
+a=0;b=1;
+for i in range(n-2):
+    print(a,end=" ")
+    print(b,end=" ")
+    a=a+b
+    b=b+a
